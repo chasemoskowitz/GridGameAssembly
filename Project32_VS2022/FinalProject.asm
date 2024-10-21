@@ -19,7 +19,7 @@ MAX_VALUE = 100                ; constant for max value
 
 percentValue REAL8 0.8         ; collection percentage
 tempStore REAL8 ?              ;temporay storage for arrray value
-accumulator REAL8 ?            ;accumulator for amount of daisys picked up
+accumulator REAL8 ?            ;accumulator for amount of candy picked up
 
 
 valueToLoad DWORD ?           ;value to load into array
@@ -89,20 +89,20 @@ L2:
 
 	mov edx, 0				; prepare for mul
 
-	mov ebx, MAX_COLS*8 	; calculate the number of bytes in a row
-	mov eax, rowNum          ;mov rowNum into EAX
+	mov ebx, MAX_COLS*8 	      ; calculate the number of bytes in a row
+	mov eax, rowNum               ;mov rowNum into EAX
 
-	mul ebx                  ; eax is now rowNum * MAX_COLS*8 - total bytes before current row
-    mov edi, eax			 ; put byte offset into edi
+	mul ebx                       ; eax is now rowNum * MAX_COLS*8 - total bytes before current row
+    mov edi, eax	              ; put byte offset into edi
 
-	mov eax, colNum          ;load eax with colum number
-	mov ebx, 8				; load ebx with 8 for size of element
-	mul ebx			       	; eax is now colNum*8 which is the byte offset in the current row
+	mov eax, colNum                ;load eax with colum number
+	mov ebx, 8		       ; load ebx with 8 for size of element
+	mul ebx			       ; eax is now colNum*8 which is the byte offset in the current row
 	
 	
-	add edi, eax			; edi is now rowNum * NUM_COLS*4 + colNum*4
-							; which is the byte offset from the beginning
-							; of the array to this element rowNum,colNum
+	add edi, eax			  ; edi is now rowNum * NUM_COLS*4 + colNum*4
+					  ; which is the byte offset from the beginning
+					  ; of the array to this element rowNum,colNum
 
 	mWrite "Current value is: "
 
@@ -171,7 +171,7 @@ main ENDP
 
 ; =============================================
 ;		
-; displayArray procedure displays the 2D array fieldOfDaisies
+; displayArray procedure displays the 2D array warehouseFloor 
 ;		
 ; no parameters, but: 
 ;      warehouseFloor is expected to be a 2D array of FP
