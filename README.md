@@ -9,7 +9,8 @@ When you chose to finish, the game will tell you how many times you picked up th
 
 To run this game, the Irvine folder should be placed in root of C: drive
 
-![Screenshot 2024-10-22 171920](https://github.com/user-attachments/assets/86fdcc4f-9671-4cb8-b161-47b1c96e0915)
+
+![Screenshot 2024-10-22 172853](https://github.com/user-attachments/assets/8e141262-740c-4bb9-8227-1af5de7bd0b1)
 
 
 
