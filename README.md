@@ -14,4 +14,4 @@ To run this game, the Irvine folder should be placed in root of C: drive
 
 
 
-You can then open the soltuion file in the Project32_VS2022 in visual studio
+You can then open the soltuion file in the C:\downloads\Project32_VS2022 in visual studio
