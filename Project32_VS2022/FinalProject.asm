@@ -3,8 +3,8 @@ TITLE Program Template			(main.asm)
 ; Program Description:		Assembly Project
 ; Author:					Chase Moskowitz
 ; 							based on Kip Irvine's Template
-; Date Created:				
-; Last Modification Date:	
+; Date Created:	5/10/24			
+; Last Modification Date: 9/15/2024	
 
 INCLUDE Irvine32.inc
 INCLUDE Macros.inc
